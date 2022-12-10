@@ -17,7 +17,7 @@ public class q1
     }
 }
 
-/* LEVEL 1  
+/* EASY
 Line 7 -> Create Scanner object
 For loop { missing.
 Line 16 -> Print statement outside loop

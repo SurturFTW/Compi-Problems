@@ -6,17 +6,15 @@ class q2 {
 
 		for (int i = 0; i < n; i++) {
 			if (arr[i] < mini) {
-				mini = arr[i];
-			}
+				mini = arr[i];	// }
 			else if (arr[i] > maxi) {
-				maxi = arr[i];
-			}
+				maxi = arr[i]; //}
 		}
 		int[] ans = new int[2];
 		ans[0] = mini;
 		ans[1] = maxi;
-		return ans;
-	}
+		// return ans;
+	}	return ans;
 	
 
 	public static void main(String[] args)
@@ -25,13 +23,13 @@ class q2 {
 		int N = arr.length;
 
 		// Function call
-		int[] ans = findMinMax(arr, N);
-		System.out.print("Maximum is: " + ans[1]);
+		int[] ans = findMinMax(arr); //nt[] ans = findMinMax(arr, N);
+		system.out.print("Maximum is: " + ans[1]);
 		System.out.print("\n" + "Minimum is: " + ans[0]);
 	}
 }
 
-/* Level 
+/* Medium
 1) } missing in if-else
 2) Line 27 -> (arr, N))
 3) Line 28,29 -> S should be capital in System.

@@ -20,7 +20,7 @@ public class q3 {
 }
 
 
-/* LEVEL 3
+/* Medium
 1) Line 5 -> Capital S in Sum
 2) Line 9 -> int i=1 
 3) Line 10 -> sum not initialised (int sum = 0)
