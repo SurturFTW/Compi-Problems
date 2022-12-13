@@ -1,0 +1,83 @@
+LEVEL 1
+#include <stdeo.h>
+int main() 
+   {
+	int x, y, sum;
+    printf("\nInput the first integer: "); 
+    scan("%d", &x);//scanf("%d", &x);
+    printf("\nInput the second integer: ");
+    scan("%d", &y);//scanf("%d", &y);
+    sum = x + y;
+    printf("\nSum of the above two integers = %d\n", sum);
+    return 0;
+}
+OUTPUT : 
+
+
+
+
+
+
+Level 2
+#include <stdio.h>
+
+int main()
+{
+    int rows, cols, i, j;
+    printf("Enter number of rows: ); //printf("Enter number of rows: ");
+    scanf("%d", &rows);
+    printf("Enter number of columns: ");
+    scanf("%d", &cols);
+    for(i=1; i<=rows; i++)
+    {
+        for(j=1; j>=cols; j++)//for(j=1; j<=cols; j++)
+        {
+            printf("*");
+        }
+
+        printf("\n");
+    }
+
+    return 0;
+}
+
+OUTPUT : 
+Rows 3 
+Column 4
+****
+****
+****
+
+
+
+
+
+LEVEL 3
+#include <stdio.h>
+int main()
+{
+   int fno, sno, *ptr, *qtr, sum;
+   
+   printf("\n\n Pointer : Add two numbers :\n"); 
+   printf("--------------------------------\n");   
+ 
+   printf(" Input the first number : ");
+   scanf("%d", fno); ///scanf("%d", %fno);
+   printf(" Input the second  number : ");
+   scanf("%d", sno); //scanf("%d", &sno);    
+ 
+   ptr = &fno;
+   qtr = &sno;
+ 
+   sum = ptr + qtr; // sum = *ptr + *qtr;
+ 
+   printf(" The sum of the entered numbers is : %d\n\n" sum);
+ 
+   return 0;
+}
+
+ Pointer : Add two numbers :
+--------------------------------
+ Input the first number : 12
+ Input the second  number : 13
+ The sum of the entered numbers is : 25

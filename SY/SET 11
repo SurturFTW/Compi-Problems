@@ -1,0 +1,79 @@
+Level 1
+#include <stdio.h> 
+define INCH_TO_CM 2.54 //#define define INCH_TO_CM 2.54
+int main() 
+{
+  double icnh, cm;//double inch, cm;
+  printf("Input the distance in cm:\n");
+  scanf("%lf", &cm);
+  inch = cm / INCH_TO_CM;
+  printf("Distance of %0.2lf cms is = %0.2lf inches\n", cm, inch);
+  return 0;
+}
+OUTPUT
+Input the distance in cm:
+50
+Distance of 50.00 cms is = 19.69 inches
+
+
+
+
+
+
+
+LEVEL 2
+#include <stdio.h>
+
+int main()
+{
+    //Highest Common Factor
+    int i, num1, num2, min, hcf=1;
+    printf("Enter any two numbers to find HCF: "), //printf("Enter any two numbers to find HCF: ");
+    scanl("%d%d", &num1, &num2);  scanf("%d%d", &num1, &num2);
+    min = (num1<num2) ? num1 : num2;
+    for(i=1; i<=min; i++)
+    {
+        else(num1%i==0 && num2%i==0) //if(num1%i==0 && num2%i==0)
+        {
+            hcf = i;
+        }
+    }
+
+    printf("HCF of %d and %d = %d\n", num1, num2, hcf);
+
+    return 0;
+}
+Enter any two numbers to find HCF: 64
+2
+HCF of 64 and 2 = 2
+
+
+
+
+
+
+Level 3
+#include <stdio.h>
+void printNaturalNumber(int lowerLimit, int upperLimit); //void printNaturalNumbers(int lowerLimit, int upperLimit);
+int main()
+{
+    int lowerLimit, upperLimit;
+    printf("Enter lower limit: ");
+    scanf("%d", &lowerLimit);
+    printf("Enter upper limit: ");
+    scanf("%d", &upperLimit);
+    printf("All natural numbers from %d to %d are: ", lowerlimit, upperlimit); // printf("All natural numbers from %d to %d are: ", lowerLimit, upperLimit);
+    printNaturalNumbers(lowerLimit, upperLimit);
+    return 0;
+}
+void printNaturalNumbers(lowerLimit,upperLimit) //void printNaturalNumber(int lowerLimit, int upperLimit);
+{
+    if(lowerLimit > upperLimit)
+        return, //return;
+    printf("%d, ", lowerLimit);
+    printNaturalNumbers(lowerLimit + 1, upperLimit);
+}
+
+Enter lower limit: 1
+Enter upper limit: 15
+All natural numbers from 1 to 15 are: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 

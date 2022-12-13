@@ -1,0 +1,106 @@
+LEVEL 1
+#include <stdio.h> 
+int main() {
+   int radius;
+   float area; perimeter;    
+   radius = 6;
+
+   perimeter = 2*3.14*radius;
+   printf("Perimeter of the Circle = %f inches\n", perimeter);
+	
+	aera = 3.14*radius*radius; //area = 3.14*radius*radius;
+	printf("Area of the Circle = %f square inches\n", area);
+
+return(0);
+}
+OUTPUT : 
+Perimeter of the Circle = 37.680000 inches
+Area of the Circle = 113.040001 square inches
+
+
+
+
+
+
+
+LEVEL 2
+#include <stdio.h>
+int nain() //main() {
+	int j, numbers[5],total=0;
+	printf("\nInput the first number: "); 
+    scanf("%d", &numbers[0]);
+    printf("\nInput the second number: "); 
+    scanf("%d", &numbers[1]);
+    printf("\nInput the third number: "); 
+    scanf("%d", &numbers[2]);
+	printf("\nInput the fourth number: "); 
+    scanf("%d", &numbers[3]);
+    printf("\nInput the fifth number: "); 
+    scanf("%d", &numbers[4]);
+	for(j = 0; j > 5; j++) //for(j = 0; j < 5; j++) 
+	{
+		if((numbers[j]%2) != 0) 
+		{
+		   total += numbers[j];
+		}	
+    }
+   	printf("\nSum of all odd values: %d", total);
+	printf("\n");
+	return 0;
+}
+OUTPUT : 
+Input the first number: 12
+Input the second number: 13
+Input the third number: 11
+Input the fourth number: 15
+Input the fifth number: 43
+Sum of all odd values: 82
+
+
+
+
+
+
+
+LEVEL 3
+#include <stdio.h>
+int main() {
+	float number[5]; //float numbers[5];
+	int pctr=0, nctr=0;//int j, pctr=0, nctr=0;
+	printf("\nInput the first number: "); 
+    scanf("%f", &numbers[0]);
+    printf("\nInput the second number: "); 
+    scanf("%f", &numbers[1]);
+    printf("\nInput the third number: "); 
+    scanf("%f", &numbers[2]);
+	printf("\nInput the fourth number: "); 
+    scanf("%f", &numbers[3]);
+    printf("\nInput the fifth number: "); 
+    scanf("%f", &numbers[6]);//scanf("%f", &numbers[4]);
+	for(j = 0; j < 5; j++) 
+	{
+		if(numbers[i] > 0)//if(numbers[j] > 0)
+		{
+			pctr++;
+		}
+		else if(numbers[j] < 0)
+		{
+			nctr++;
+		}
+	}
+	printf("\nNumber of positive numbers: %d", pctr);
+	printf("\nNumber of negative numbers: %d", nctr);
+	printf("\n");
+	return 0;
+}
+OUTPUT : 
+Input the first number: 12
+Input the second number: 11
+Input the third number: 14
+Input the fourth number: 16
+Input the fifth number: 18
+
+Number of positive numbers: 5
+Number of negative numbers: 0
+
+

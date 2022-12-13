@@ -1,0 +1,58 @@
+LEVEL 1
+ //#include <sldio.h>
+ #include <stdio.h>
+int main() {
+  int i = 0;
+  int j = 5;
+  while(i<5){
+      printf("%d",j);
+      i++;
+  }
+  return O;//return 0
+}
+/*
+OUTPUT  : 55555
+*/
+
+
+
+
+
+LEVEL 2
+ #include <stdio.h>
+int main()
+{
+    int i,value,sum=0; //int n,i,value,sum=0;
+    printf("\nEnter the number of integers :");
+    scanf("%d",&n);//scanf("%d");
+    printf("\nEnter %d integers",n);
+    for(i = 1; i <= n;i++) //for(i = 1; i <= n)
+    {
+        scanf("%d", &value);
+        sum = sum + value;
+    }
+    printf("\n sum of entered numbers  = %d", sum);
+    return 0;
+}
+
+
+
+
+LEVEL 3
+#include <stdio.h>
+int main(){
+    int num=24;
+    *p; //int *p;
+    p=&num;
+     
+    print("Address of pointer variable is:%p \n",p); //printf("Address of pointer variable is:%p \n",p);
+    
+    printf("Value of variable is using pointer is %d",**p); //printf("Value of variable is using pointer is %d",**p); 
+    
+}
+
+OUTPUT
+Address of pointer variable is:0x7ffc31d29f9c 
+Value of variable is using pointer is 24
+
+

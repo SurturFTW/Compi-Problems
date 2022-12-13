@@ -1,0 +1,94 @@
+LEVEL 1
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+    int n; 
+    float c;
+    printf("Enter Number:");
+    scanf("%d",&n);
+    c=pow(&n, 3); // c=pow(n, 3);
+    printf("Cube of %d is %f",n,l); // printf("Cube of %d is %f",n,c);
+    return 0;
+}
+Enter Number:11
+Cube of 11 is 1331.000000
+
+
+
+
+
+
+LEVEL 2
+#include<stdio.h>
+int main()
+{
+    char grade;
+    printf("Enter your grade:\n") //printf("Enter your grade:\n");
+    scanf("%c", &grade);
+    switch(int grade) //switch(grade) 
+    {
+        case 'A'; //case 'A': 
+            printf("Excellent\n");
+            break;
+        case 'B': 
+            printf("Keep it up!\n");
+            break;
+        case 'C': 
+            printf("Well done\n");
+            break;
+        case 'D':
+            printf("You passed\n");
+            break;
+        case 'F':
+            printf("Better luck next time\n");
+            break;
+        default: 
+            printf("Invalid grade\n");
+    }
+    printf("Your grade is %c\n",grade); 
+    return 0;
+}
+OUTPUT : 
+Enter your grade:
+B
+Keep it up!
+Your grade is B
+
+
+
+
+
+LEVEL 3
+#include<stdio.h>
+int main()
+{
+    int array[10],i,n;
+
+    printf("\nEnter number of elements in array:"); //printf("\nEnter number of elements in array:");
+    scan("%d", &n); //scanf("%d", &n);
+
+    printf("\nEnter elements\n");
+    for(i=0; i < n;i++ ){
+        scanf("%d", &array[j]); //scanf("%d", &array[i]);
+    }
+    printf("\n Elements Are:");
+    for( i < n; i++) //for(i=0;i < n; i++)
+    {
+         printf("%d \t",array[i]);
+    }
+    return 0;
+}
+
+OUTPUT : 
+
+Enter number of elements in array:4
+
+Enter elements
+12
+13
+14
+15
+
+ Elements Are:12        13      14      15 
+

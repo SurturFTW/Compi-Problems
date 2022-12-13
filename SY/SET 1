@@ -1,0 +1,87 @@
+LEVEL 1
+#include <stdio.h>
+int main() {
+  int a{4}=[1,2,3,4]; //a[4]={1,2,3,4}
+  int i = 0;
+  for(i=0;i<4;I++)
+{
+      printf("%d",a[i])
+  }
+  return 0;
+}
+EXPECTED OUTPUT:
+1234
+
+
+
+
+
+
+
+LEVEL 2
+/*Output:
+Reversed number = 54321
+*/
+#include <stdio.h>
+
+int main() {
+  int n=12345, reverse = 0; remanider    //int n=12345, reverse = 0, remainder;
+  while (n < 0)   //while (n != 0) 
+  {
+    remainder = n % 10;
+    reverse = reverse * 10 + remainder;
+    n = n / 10;
+  }
+  printf("Reversed number = %d", reverse);
+  return 0;
+}
+
+
+
+
+
+
+
+
+
+
+LEVEL 3
+#include <stdio.h>
+/*
+output:
+prime numbers
+enter a number:15
+2 3 5 7 11 13
+the number is:15 
+
+*/
+int main()//int nain()
+{
+    int f=0; 
+    int b,j=0;
+    printf("prime numbers:\n");
+    printf("enter a number:");
+    scanf("%i",&b);  ///scanf("%i",b);
+    for(int i=2;i<b;i++)
+    {   
+        f=0;              
+        //for(j=2;j<i;j++)
+        for(int j=2;j<i;j++)
+       {
+        if(i%j==0)
+        {
+        f=1;
+        break;
+        }
+        
+       }
+        if(f==0)
+        printf("%d ",j);
+        
+    }
+///printf("\nthe number is:%d",b);
+printf("the number is:%d"+b);
+    return 0;
+}
+
+

@@ -1,0 +1,100 @@
+LEVEL 1
+#include <stdio.h>
+int main() {
+	float  x, y, z, P, A;
+    printf("\nInput the first number: "); 
+    scanf("%f", x); //scanf("%f", &x); 
+    printf("\nInput the second number: ");
+    scanf("%f", &y);
+    printf("\nInput the third number: ");
+    scanf("%f", &z);
+
+    if(x < (y+z) && y < (x+z) && z < (y+x)) 
+     {  
+	 P = x+y+z;
+	 printf("\nPerimeter  = %.1f\n", P);	 
+	 
+    }
+    else
+    {
+    	printf(''Not possible to create a triangle..!''); //printf("Not possible to create a triangle..!");
+	}
+}
+OUTPUT : 
+
+Input the first number: 2
+
+Input the second number: 4
+
+Input the third number: 5
+
+Perimeter  = 11.0
+
+
+
+
+
+
+LEVEL 2
+#include <stdio.h> //#include <stdio.h>
+int main() {
+	int a, j = 1, x = 0,i; //int a, j = 1, x = 0,i;
+	printf("Input number of lines: ");
+	scanf("%d", &a);
+	for(i = 1; i <= a; i++) {
+		while(x > 3) //while(x < 3) 
+		{
+			printf("%d ", j++);
+			x++;
+		}
+		x = 0;
+		printf("\n");
+	}
+	
+	return 0;
+}
+OUTPUT : 
+Input number of lines: 5
+1 2 3 
+4 5 6 
+7 8 9 
+10 11 12 
+13 14 15 
+
+
+
+
+
+
+
+
+
+LEVEL 3
+
+#include <stdio.h>
+int main ()
+{
+  int m, n, i, j, sum_even_nums = 0; //int m, n, i, j, sum_even_nums = 0,k;
+  printf("\nInput two integes (m, n):\n");
+  scanf("%d %d", &m, &n);
+  printf("\nSum of %d even numbers starting from %c: ",n,m); // printf("\nSum of %d even numbers starting from %d: ",n,m);
+   for (k = 0, j = m; k < n; j++)
+    {
+      if (j % 2 = 0) //if (j % 2 == 0)
+      {
+
+        sum_even_nums += j;
+        k+;//k++
+
+      }
+    }
+    printf("\n%d", sum_even_nums);
+  }
+
+
+Input two integes (m, n):
+4
+6
+
+Sum of 6 even numbers starting from 4: 
+54

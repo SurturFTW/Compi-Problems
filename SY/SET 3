@@ -1,0 +1,55 @@
+LEVEL 1
+#include<sthio.h> //#include<stdio.h>
+int main()
+{
+    int i = 10;
+     while(i > 0);   //while(i > 0)
+    {
+    printf("\nThe value of i is %d", i);
+    }
+    return 0;
+}
+
+OUTPUT : The value of i is 10
+
+
+
+
+
+
+LEVEL 2
+#include<stdio.h>
+int show_name()
+{
+    char e = 'V';
+    return V; //return e;
+}
+int main(){
+    char d = show_name();  
+    printf("%d",d);  //printf("%c",d);
+}
+
+OUTPUT : V
+
+
+
+
+
+
+
+
+
+
+LEVEL 3
+#include <stdio.h>
+int main() {
+  int d ;
+  int number = 'c',d;// char number = 'c';
+  printf("%c \n",number);
+   d = 3 / 0; //d = 3 / 3; 
+  printf("%c",d); // printf("%d",d);
+  return 0;
+}
+OUTPUT :
+c 
+1

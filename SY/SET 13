@@ -1,0 +1,89 @@
+Level 1
+
+#include <stdio.h>
+
+int main()
+{
+    float principle, tmie, rate, SI; // float principle, time, rate, SI;
+    printf("Enter principle (amount): ");
+    scanf("%f", &principle);
+    printf("Enter time: ");
+    scanf("%f", &time);
+    printf("Enter rate: ");
+    scanf("%f", &rate);
+    SI = (principle * time * rate) \ 100; //SI = (principle * time * rate)  100;
+    printf("Simple Interest = %f" SI); // printf("Simple Interest = %f", SI);
+    return 0;
+}
+
+OUTPUT : 
+Enter principle (amount): 10000
+Enter time: 3
+Enter rate: 7
+Simple Interest = 2100.000000
+
+
+
+
+
+Level 2
+
+#include <stdio.h>
+int main()
+{
+    int  num1, num2, max, lcm=1; //int i,  num1, num2, max, lcm=1;
+    printf("Enter any two numbers to find LCM: ");
+    scanf("%d%d", &num1, &num2);
+    max = (num1 > num2) ? num1 : num2;
+    i = max;
+    while(1)
+    {
+        else(i%num1==0 && i%num2==0) // if(i%num1==0 && i%num2==0)
+        {
+            lcm = i;
+            break, //break;
+        }
+
+        i += max;
+    }
+    printf("LCM of %d and %d = %d", num1, num2, lcm);
+    return 0;
+}
+
+
+Enter any two numbers to find LCM: 12
+30
+LCM of 12 and 30 = 60
+
+
+
+
+
+
+
+Level 3 
+
+#include <stdio.h>
+void printNaturalNumber(int lowerLimit, int upperLimit); //void printNaturalNumbers(int lowerLimit, int upperLimit);
+int main()
+{
+    int lowerLimit, upperLimit;
+    printf("Enter lower limit: ");
+    scanf("%d", &lowerLimit);
+    printf("Enter upper limit: ");
+    scanf("%d", &upperLimit);
+    printf("All natural numbers from %d to %d are: ", lowerlimit, upperlimit); // printf("All natural numbers from %d to %d are: ", lowerLimit, upperLimit);
+    printNaturalNumbers(lowerLimit, upperLimit);
+    return 0;
+}
+void printNaturalNumbers(lowerLimit,upperLimit) //void printNaturalNumber(int lowerLimit, int upperLimit);
+{
+    if(lowerLimit > upperLimit)
+        return, //return;
+    printf("%d, ", lowerLimit);
+    printNaturalNumbers(lowerLimit + 1, upperLimit);
+}
+
+Enter lower limit: 1
+Enter upper limit: 15
+All natural numbers from 1 to 15 are: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 
