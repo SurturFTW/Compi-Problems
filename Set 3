@@ -1,0 +1,56 @@
+/* East
+1) StringBuilder(str)
+*/
+public class Main {
+    public static void main(String[] args){
+        String str = "Hello, world!";
+        String Reversed = new StringBuilder(Str).reverse().toString();
+        System.out.println("Original string: " + str); 
+        System.out.println("Reversed string: " + reversed);
+    }
+}
+
+
+/* Medium
+1) (System.in)
+2) } missing
+*/
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new scanner();
+        System.out.println("Enter a number: ");
+        int num = input.nextInt();
+
+        if (num > 0) {
+            System.out.println(num + " is positive.");
+        }
+        else if (num < 0) {
+            System.out.println(num + " is negative.");
+        }
+        else {
+            System.out.println(num + " is zero.");
+        }
+    }
+
+
+/* Hard
+1) (n % 2 == 0);
+2) n = n / 2;
+3) ; missing at last
+*/
+public class Main {
+    public static void main(String[] args) {
+      int n = 27;
+      System.out.print("Hailstone sequence for " + n + ": ");
+      while (n != 1) {
+        System.out.print(n + " ");
+        if (n % 2 = 0) {
+            n = n \ 2;
+        } else {
+            n = 3 * n + 1;
+        }
+    }
+    System.out.println(n)
+    }
+}
