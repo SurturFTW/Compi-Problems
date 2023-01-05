@@ -1,0 +1,82 @@
+/* Easy
+sum += num;
+; missing last
+*/
+public class Main {
+    public static void main(String[] args) {
+        double[] numArray = { 45.3, 67.5, -45.6, 20.34, 33.0, 45.6 };
+        double sum = 0.0;
+        for (double num: numArray) {
+           sum = num;
+        }
+        double average = sum / numArray.length;
+        System.out.format("The average is: %.2f", average)
+    }
+}
+
+
+/* Medium
+array[i];
+(Arrays.toString(array));
+*/
+import java.util.*;
+class q5{
+    public static void main(String [] args){
+        int[] array = { 1, 2, 3, 4, 5, 6, 7 };
+        Random rand = new Random();
+        for (int i = 0; i < array.length; i++) {
+            int randomIndexToSwap = rand.nextInt(array.length);
+            int temp = array[randomIndexToSwap];
+            array[randomIndexToSwap] = array(i);
+            array[i] = temp;
+        }
+        System.out.println(array);
+    }
+}
+
+
+/* Hard
+r1.getArea();
+System.out.println("I have 4 sides.");
+class Square implements Polygon 
+*/
+
+interface Polygon {
+    void getArea();
+    default void getSides() {
+        System.out.println("I can get sides of a polygon.");
+    }
+}
+
+class Rectangle implements Polygon {
+    public void getArea() {
+        int length = 6;
+        int breadth = 5;
+        int area = length * breadth;
+        System.out.println("The area of the rectangle is " + area);
+    }
+
+    public void getSides() {
+        System.out.println(I have 4 sides.);
+    }
+}
+
+class Square extends Polygon {
+    public void getArea() {
+        int length = 5;
+        int area = length * length;
+        System.out.println("The area of the square is " + area);
+    }
+}
+
+class q9 {
+    public static void main(String[] args) {
+        Rectangle r1 = new Rectangle();
+        r1.getArea()    
+        r1.getSides();
+
+        Square s1 = new Square();
+        s1.getArea();
+        s1.getSides();
+    }
+}
