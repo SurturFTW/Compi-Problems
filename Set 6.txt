@@ -1,0 +1,53 @@
+/* Easy
+for (int i = 1;
+*/
+public class Main {
+  public static void main(String[] args) {
+    int rows = 5;
+    for (i = 1; i <= rows; ++i) {
+      for (int j = 1; j <= i; ++j) {
+        System.out.print("* ");
+      }
+      System.out.println();
+    }
+  }
+}
+
+
+/* Medium
+reverse(sentence);
+public static String reverse
+*/
+public class Main{
+  public static void main(String[] args) {
+    String sentence = "Go work";
+    String reversed = reverse(sentence)
+    System.out.println("The reversed sentence is: " + reversed);
+  }
+  public static reverse(String sentence) {
+    if (sentence.isEmpty())
+      return sentence;
+    return reverse(sentence.substring(1)) + sentence.charAt(0);
+  }
+}
+
+
+/* Hard
+import java.util.Scanner;
+nextInt();
+System.out.println(num + " is positive.");
+*/
+public class Main{ 
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println(Enter a number: );
+        int num = input.nextint();
+        if (num > 0) {
+            system.out.println(num + " is positive.")
+        } else if (num < 0) { 
+            System.out.println(num + " is negative.");
+        } else {
+            System.out.println(num + " is zero.");
+        }
+    }
+}
