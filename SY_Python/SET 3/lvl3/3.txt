@@ -1,0 +1,45 @@
+LEVEL 3
+
+Output:
+[1, 2, 3, 4, 5]
+After removing an element
+[2, 3, 4, 5]
+
+
+code:
+class Queue():
+
+    def _init(self):
+        self.queue = []
+
+    # Add an element
+    def enqueue(self, item):
+        self.queue.append(item)
+
+    # Remove an element
+    def deque(self):
+        if len(self.queue) < 1:
+            return None
+        return self.queue.pop(0)
+
+    # Display  the queue
+    def display(self):
+        print(self.queue)
+
+    def size(self):
+        return len(self.queue)
+
+
+q = Queue()
+q.enqueue(1)
+q.enqueue(2)
+q.enqueue(3)
+q.enqueue(4)
+q.enqueue(5)
+
+q.display()
+
+q.dequeue()
+
+print("After removing an element")
+q.display()

@@ -1,0 +1,60 @@
+/* Easy
+1) n!=2
+*/
+public class Main {
+	public static void main(String[] args) {
+		System.out.println(isPrime(19));
+		System.out.println(isPrime(49)); 
+	}
+	static boolean isPrime(int n) {
+		if (n == 0 || n == 1) {
+			return false;
+		}
+		if (n != 2) { 
+			return true;
+		}
+		for (i = 2; i <= n / 2; i++) { 
+			if (n % i == 0) {
+				return false;
+			}
+		}
+		return true;
+	}
+}
+
+
+/* Medium
+1) sum + i;
+2) void return type in main
+*/
+public class Main {	
+    static void func1(){
+        int x = 20, y = 30;
+        int sum = x + y; 
+        System.out.println("Sum of two numbers: " + sum); 
+    }
+    static void func2(){
+        for (int i = 1; i <= 5; i++){
+            int sum = 0
+            sum = sum + i
+        }
+        System.out.println("Sum of 1 to 5 \n");
+        System.out.println(sum);
+    }
+    public static void main(string[] args) {
+        func1();
+        func2();
+    }
+}
+
+
+
+/* Hard
+1) Greek {, () and ; 
+*/
+public class Main｛
+    public static void main(String[] args){
+      System.out.println（"Hello, world!"）;
+      System.out.println（"Utter, Disappointment"）;
+    }
+}

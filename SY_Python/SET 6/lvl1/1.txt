@@ -1,0 +1,16 @@
+LEVEL 1
+
+output:
+Enter a number:4
+Enter a number:7
+Addition= 11
+ngle is ' ,area)
+
+code:
+def info(a,b):
+    n1=a,n2=b
+    printf("Addition=",n1+n2)
+a=int(input("Enter a number:"))
+b=int(input("Enter a number:"))
+info(a,b)
+

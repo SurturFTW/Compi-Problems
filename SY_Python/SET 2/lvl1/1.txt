@@ -1,0 +1,13 @@
+LEVEL 1
+output:
+Enter length: 10
+Enter breadth: 4
+The area of the rectangle is  40
+
+
+code:
+int l,b;
+l = int(input('Enter length: '))  
+b = int(input('Enter breadth: '))    
+area = l*b 
+printf('The area of the rectangle is ' ,area) 

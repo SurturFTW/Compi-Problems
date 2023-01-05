@@ -1,0 +1,27 @@
+LEVEL 3
+
+
+output:-
+Information is
+Astha a004 19 20000
+
+code:
+
+class person:
+    def info(self,name,id1):
+        self.name=name
+        self.id1=id1
+class employee:
+    def info1(self,age):
+        self.age=age
+class empsalary(person;employee):
+    def info2(self,name,id1,age,salary):
+        person.info(self,name,id1)
+        employee.info1(self,age)
+        self.salary=salary
+    def put():
+        print("Information is")
+        print(self.name,self.id1,self.age,self.salary)
+e1=emsalary()
+e1.info2('Aastha','a004',19,20000)
+e1.put()

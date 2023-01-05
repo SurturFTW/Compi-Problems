@@ -1,0 +1,83 @@
+LEVEL 1
+3)
+n1 = int( input("Please enter value for n1: "))  
+n2 = int( input("Please enter value for n2: "))
+//temp variable is taken to temporary store values
+    temp = n1 
+    n1 = n2
+    n2 = temp   
+print ("The Value of P after swapping: ", n1)  
+print ("The Value of Q after swapping: ", n2)   
+error:1)comment in python
+2)indentation
+output:Please enter value for n1: 12
+Please enter value for n2: 45
+The Value of P after swapping:  45
+The Value of Q after swapping:  12
+
+LEVEL 2
+
+3)
+class student:
+    def getinfo(self,name,roll):
+        self.name=name
+        self.roll=roll
+    def putinfo():
+        print("student information")
+        print("name=",self.name)
+        print("age=",self.roll)
+s1=new student()
+s1.getinfo('Roy',17)
+s1.putinfo()
+error-1)obj=new student() it should be obj=student()
+2)putinfo(self)
+output:-
+student information
+name= Roy
+age= 17
+
+LEVEL 3
+'''
+Output:
+[1, 2, 3, 4, 5]
+After removing an element
+[2, 3, 4, 5]
+
+'''
+
+class Queue:#class Queue():
+
+    def _init(self):#def _init__(self):
+        self.queue = []
+
+    # Add an element
+    def enqueue(self, item):
+        self.queue.append(item)
+
+    # Remove an element
+    def dequeue(self):#def deque(self):
+        if len(self.queue) < 1:
+            return None
+        return self.queue.pop(0)
+
+    # Display  the queue
+    def display(self):
+        print(self.queue)
+
+    def size(self):
+        return len(self.queue)
+
+
+q = Queue()
+q.enqueue(1)
+q.enqueue(2)
+q.enqueue(3)
+q.enqueue(4)
+q.enqueue(5)
+
+q.display()
+
+q.dequeue()
+
+print("After removing an element")
+q.display()

@@ -1,0 +1,34 @@
+LEVEL 3
+
+Output:
+Please enter the Total Number of List Elements: 5
+Please enter the Value of 1 Element : 1
+Please enter the Value of 2 Element : 2
+Please enter the Value of 3 Element : 3
+Please enter the Value of 4 Element : 4
+Please enter the Value of 5 Element : 5
+
+The Sum of Even Numbers in this List =   6
+The Sum of Odd Numbers in this List =   9
+
+
+code:
+NumList = []
+Even_Sum = 0
+Odd_Sum = 0
+
+Number = int(input("Please enter the Total Number of List Elements: "))
+for i in range(1, Number):
+    value = int(input("Please enter the Value of Element : " i))
+    NumList.append(value)
+
+for j in range(Number):
+    
+if(NumList[j] % 2 == 0):
+    Even_Sum = Even_Sum + NumList[j]
+else:
+    Odd_Sum = Odd_Sum + NumList[j]
+        
+   
+print("\nThe Sum of Even Numbers in this List =  ", Even_Sum)
+print("The Sum of Odd Numbers in this List =  ", Odd_Sum)

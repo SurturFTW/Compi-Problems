@@ -1,0 +1,69 @@
+LEVEL 1
+numbers = [1,2,3,4,5]  
+sum1= 0    
+for num in numbers{      
+    sum1 = sum1 + num
+    }  
+print("The sum of numbers  is: , sum1)  
+Error:1)Curly braces
+2)double quotes are not completed in print
+output:The sum of numbers  is:  15
+
+LEVEL 2
+8)
+class person:
+    def getinfo(self,name,age):
+        self.name=name
+        self.age=age
+class employee(person)
+    def info(self,id,name,age):
+        person.getinfo(self,name,age)
+        self.id=id
+class empsalary(employee)
+    def empdetails(self,id,name,age,salary):
+        employee.info(self,id,name,age)
+        self.salary=salary
+    def printdetails(self):
+        print("Name:=self.name")
+        print("Age=self.age")
+        print("Roo no:=self.roll")
+        print("Salary=",self.salary)
+e1=empsalary()
+name=input("Enter name:")
+age=int(input("Enter age:"))
+roll=int(input("Enter RoLL No:"))
+salary=int(input("Enter Salary:"))
+e1.empdetails(id,name,age,salary)
+e1.printdetails()
+Error:-1)colon is missing while inheriting
+
+LEVEL 3
+Output:
+Sorted array is:
+1 2 4 5 8 
+'''
+
+def bubbleSort(arr):#def bubbleSort(ar):
+	n = len(arr)#n = length(arr)
+
+	
+	for i in range(n):
+
+		
+		for j in range(0, n-i-1):
+
+			if arr[j] > arr[j+1]:
+				t  = arr[j+1]
+				arr[j+1]=arr[j]#arr[j]=arr[j+1]
+				arr[j]=t;
+
+
+# Driver code to test above
+# if name == "main":
+arr = [5, 1, 4, 2, 8]
+
+bubbleSort(arr)
+
+print("Sorted array is:")
+for i in range(len(arr)):
+	print("%d" % arr[i], end=" ")

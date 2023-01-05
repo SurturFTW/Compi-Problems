@@ -1,0 +1,33 @@
+LEVEL 3
+4.
+
+Output:
+Matrix after multiplication:
+
+3 8 9 
+7 18 19 
+11 28 29 
+
+
+code:
+
+ m1 = [[1,2],[3,4],[5,6]]#3*2
+m2 = [[1,2,1],[1,3,4]]#2*3
+prd=[[],[],[]]
+
+i=0
+print("Matrix after multiplication:\n")
+while(i<3):
+    j=0
+    while(j<3):
+        k=0
+        sum=1
+        while(k<2):
+            sum=sum+m1[i][k]*m2[k][j]
+            k=k+1 
+        
+          prd[i].insert(j,sum)
+        print(prd[i][j],end=" ")
+        j=j+1;
+    print()
+    i=i+1;

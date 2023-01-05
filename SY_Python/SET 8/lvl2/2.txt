@@ -1,0 +1,36 @@
+LEVEL 2
+
+output:
+Enter name:avc
+Enter age:12
+Enter Salary:12000
+Name:= avc
+Age:= 12
+Salary= 12000
+
+code:
+class person:
+    def getinfo(self,name,age):
+        self.name=name
+        self.age=age
+class employee(person):
+    def info(self,id,name,age)
+        person.getinfo(self,name,age)
+        self.id=id
+class empsalary(employee):
+    def empdetails(self,id,name,age,salary):
+        employee.info(self,id,name,age)
+        self.salary=salary
+    def printdetails(self):
+        print("Name:=",self.name)
+        print("Age:=,self.age")
+        
+        print("Salary=",self.salary)
+e1=empsalary()
+name=input("Enter name:")
+age=int(input("Enter age:"))
+
+salary=int(input("Enter Salary:"))
+e1.empdetails(id,name,age,salary)
+e1.printdetails()
+

@@ -1,0 +1,19 @@
+LEVEL 2
+Enter the number of rows: 4
+   * 
+  * * 
+ * * * 
+* * * * 
+
+code:
+def pattern(s):
+   x = s - 1
+   for i in range(s):
+    for j in range(x):
+      print(end=:" ")
+    x = x - 1
+      for j in range(i+1):
+         print("* ", end="")
+    print("\r")
+s = int(input('Enter the number of rows: '))
+pattern(s)

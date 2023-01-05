@@ -1,0 +1,73 @@
+LEVEL 1
+8)
+numbers = [1,2,3,4,5]  
+sum1= 0    
+for num in numbers      
+sum1 = sum1 + num   
+print("The sum of numbers  is: ", sum1)  
+Error:1)missing colon after for loop
+2)indentation
+output:-The sum of numbers  is:  15
+
+LEVEL 2
+Output:
+Press (1) for Cinema, (2) for Theatre : 1
+Are you studemnt(Y/N) : y
+The fee you have to pay : 5.0
+'''
+selection = input("Press (1) for Cinema, (2) for Theater : ")
+student = input("Are you student(Y/N) : ")#student = input(''Are you student(Y/N) : '')
+price = 0
+#non-discounted fee calculation
+if selection == '1':
+    price = 10 #cinema
+elif selection == '2':#else if selection == '2':
+    price = 5 #theatre
+#student discount
+if student =='Y' or student =='y':#if student =='Y' or student ='y':
+    price=price / 2  #%50
+print(" The fee you have to pay :",price)
+
+LEVEL 3
+
+'''
+Output:
+pushed item: 1
+pushed item: 2
+pushed item: 3
+pushed item: 4
+popped item: 4
+stack after popping an element: ['1', '2', '3']
+'''
+# Creating a stack
+def create_stack():#def create_stack();
+    stack = []
+    return stack
+
+
+# Creating an empty stack
+def check_empty(stack):#deff check_empty(stack):
+    return len(stack) == 0
+
+
+# Adding items into the stack
+def push(stack, item):
+    stack.append(item)#stack.apend(item)
+    print("pushed item: " + item)
+
+
+# Removing an element from the stack
+def pop(stack):
+    if (check_empty(stack)):
+        return "stack is empty"
+
+    return stack.pop()
+
+
+stack = create_stack()
+push(stack, str(1))
+push(stack, str(2))
+push(stack, str(3))
+push(stack, str(4))
+print("popped item: " + pop(stack))
+print("stack after popping an element: " + str(stack))

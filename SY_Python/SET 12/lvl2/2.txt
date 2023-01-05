@@ -1,0 +1,17 @@
+LEVEL 2
+
+'''
+How to multiply the digits of the number entered by the user (except zero) on Python?
+Output:
+enter an number: 1024
+digits of the number:  8
+'''
+
+code:
+
+number = input("enter an number: ")
+
+for digitofnumber in str(Number):
+  if int(digitofnumber) != 0:
+    multiplication=multiplication*int(digitofnumber)
+print("digits of the number: ",multiplication)

@@ -1,0 +1,59 @@
+LEVEL 1
+5)
+num=input("Enter A number:")
+if(num<0):
+    printf("Number is negative")
+else:
+    printf("Number is positive")
+Error:1)taking string as input
+2)printf
+output:Enter A number-8
+Number is negative
+LEVEL 2
+5)
+class person:
+    def getinfo(self,name,age):
+        self.name=name
+        self.age=age
+class student person:
+    def info(self,name,age,roll):
+        person.getinfo(self,name,age)
+        self.roll=roll
+    def printdetails(self):
+        print("Name:=",self.name)
+        print("Age:=",self.age)
+        print("Roo no:=",self.roll)
+s1=student()
+name=input("Enter name:")
+age=int(input("Enter age:"))
+roll=int(input("Enter RoLL No:"))
+s1.info(self,name,age,roll)
+s1.printdetails()
+Error:-1)'person' class should be in () while inheriting
+2)unneccessary self while calling info() function
+output:
+Enter name:Aayush
+Enter age:34
+Enter RoLL No:11
+Name:=Aayush
+Age:= 34
+Roo no:= 11
+
+LEVEL 3
+
+5.
+'''
+Output:
+2600,2602,2604,2606,2608,2620,2622,2624,2626,2628,2640,2642,2644,2646,2648,2660,2662,2664,2666,
+2668,2680,2682,2684,2686,2688,2800,2802,2804,2806,2808,2820,2822,2824,2826,2828,2840,2842,2844,
+2846,2848,2860,2862,2864,2866,2868,2880,2882,2884,2886,2888
+'''
+values = []
+for i in range(2500, 3001):#for i in ranges(2500, 3001):
+    s = str(i)
+    '''
+    if (int(s[0])%2==0) or (int(s[1])%2==0) or (int(s[2])%2==0) or (int(s[3])%2==0):
+    '''
+    if (int(s[0])%2==0) and (int(s[1])%2==0) and (int(s[2])%2==0) and (int(s[3])%2==0):
+        values.append(s)
+print (",".join(values))#print (",".join(value))

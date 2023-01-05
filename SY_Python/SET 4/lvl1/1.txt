@@ -1,0 +1,13 @@
+LEVEL 1
+
+output:
+Enter A number:6
+Number is positive
+
+code:
+num=int(input("Enter A number:"))
+if(num<0):
+print("Number is negative")
+else(num>0):
+ print("Number is positive")
+

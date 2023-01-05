@@ -1,0 +1,51 @@
+LEVEL 1
+20)
+import math
+n=int(input(Enter A Number:))
+cube=math.pow(n;3)
+print("Cube Of ",n,"is",cube)
+Error:1)double quotes of statement inside input() is missing
+2)pow(n;3)
+output:
+Enter A Number3
+Cube Of  3 is 27.0
+
+LEVEL 2
+
+'''
+How to multiply the digits of the number entered by the user (except zero) on Python?
+Output:
+enter an number: 1024
+digits of the number:  8
+'''
+multiplication=1#empty
+number = input("enter an number: ")
+
+for digitofnumber in str(number):#for digitofnumber in str(Number):
+  if int(digitofnumber) != 0:
+    multiplication=multiplication*int(digitofnumber)
+print("digits of the number: ",multiplication)#inside indentation
+
+LEVEL 3
+14)
+class person:
+    def info(self,name,id1):
+        self.name=name
+        self.id1=id1
+class employee:
+    def info1(self,age):
+        self.age=age
+class empsalary(person ; employee):#class empsalary(person,employee):
+    def info2(self,name,id1,age,salary):
+        person.info(self,name,id1)
+        employee.info1(self,age)
+        self.salary=salary
+    def put():#def put(self):
+        print("Information is")
+        print(self.name,self.id1,self.age,self.salary)
+e1=empsalary()#e1=empsalary()
+e1.info2('Aastha','a004',19,20000)
+e1.put()
+output:-
+Information is
+Astha a004 19 20000

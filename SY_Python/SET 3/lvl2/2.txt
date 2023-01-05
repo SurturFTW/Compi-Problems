@@ -1,0 +1,19 @@
+LEVEL 2
+output:-
+student information
+name= Roy
+age= 17
+
+code:
+class student:
+    def getinfo(self,name,roll):
+        self.name=name
+        self.roll=roll
+    def putinfo():
+        print("student information")
+        print("name=",self.name)
+        print("age=",self.roll)
+s1=new student()
+s1.getinfo('Roy',17)
+s1.putinfo()
+

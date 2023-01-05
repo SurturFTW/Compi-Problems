@@ -1,0 +1,51 @@
+LEVEL 1
+
+int def info(a,b):
+    n1=a
+    n2=b
+    print("Addition=",n1+n2)
+a=int(input("Enter a number:"))
+b=int(input("Enter a number:"))
+info(a,b,c)
+Error:1)int in function defination
+2)while calling info function number of arguments
+output:Enter a number:45
+Enter a number:5
+Addition= 50
+
+LEVEL 2
+10)
+/*
+Output:
+2 + 4 = 6
+ 
+ 
+ */
+
+
+'''
+#ord gives the ascii number value of the passed character where as
+#chr gives the ascii character value of the passed number
+def show_name():#def show_name()
+    num='V';#num=V;
+    ch=int(ord(num)/2);#ch=ord(num)/2;
+    return ch;
+d=show_name();#d=show_name;
+print('2 ',chr(d),' 4 = ',6);
+
+LEVEL 3
+
+dic={'pp':92,'ds':97,'apm':88,'dbms':99)#dic={'pp':92,'ds':97,'apm':88,'dbms':99}
+new=list(dic.items())
+print("Dictionary Before Sorting",new)
+l=lenhth(new) #l=len(new)
+for i in range(l-1):
+    for j in range(i+1):#for j in range(i+1,l):
+        if (new[i][1]>new[j][1]):
+            temp=new[i]
+            new[i]=new[j]
+            new[j]=temp
+print("Dictionary Before Sorting",dict(new))
+output:-
+Dictionary Before Sorting [('pp', 92), ('ds', 97), ('apm', 88), ('dbms', 99)]
+Dictionary Before Sorting {'apm': 88, 'pp': 92, 'ds': 97, 'dbms': 99}

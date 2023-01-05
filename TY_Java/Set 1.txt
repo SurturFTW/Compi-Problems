@@ -1,0 +1,76 @@
+/* EASY
+For loop { missing
+sc.nextInt();
+*/
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args) 
+    {
+        int n, a = 0, b = 0, c = 1;
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter value of n:");
+        n = sc.nextInt()
+        System.out.print("Fibonacci Series:");
+        for(int i = 1; i <= n; i++)
+            a = b;
+            b = c;
+            c = a + b;
+            System.out.println(a);
+        }
+    }
+}
+
+
+/* Medium
+1) } missing in if-else
+2) Line 27 -> (arr, N))
+*/
+class Main {
+	static int[] findMinMax(int[] arr, int n)
+	{
+		int mini = arr[0];
+		int maxi = arr[0];
+
+		for (int i = 0; i < n; i++) {
+			if (arr[i] < mini) {
+				mini = arr[i];
+			else if (arr[i] > maxi) {
+				maxi = arr[i];
+		}
+		int[] ans = new int[2];
+		ans[0] = mini;
+		ans[1] = maxi;
+		return ans;
+	}
+	
+	public static void main(String[] args)
+	{
+		int[] arr = { 1, 2, 3, 4, 5 };
+		int N = arr.length;
+		// Function call
+		int[] ans = findMinMax(arr);
+		System.out.print("Maximum is: " + ans[1]);
+		System.out.print("\n" + "Minimum is: " + ans[0]);
+	}
+}
+
+/* Hard
+1) Scanner import
+2) nextInt();
+3) System.out.println
+*/
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println(Enter a number: );
+        int num = input.nextint();
+
+        if (num > 0) {
+            system.out.println(num + " is positive.");
+        } else if (num < 0) { 
+            system.out.println(num + " is negative."); 
+        } else {
+            System.out.println(num + " is zero.");
+        }
+    }
+}

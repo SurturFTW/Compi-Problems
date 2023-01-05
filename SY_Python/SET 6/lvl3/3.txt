@@ -1,0 +1,20 @@
+LEVEL 3
+
+Output:
+Caught an exception
+In finaly block for cleanup
+
+code:
+def throws():
+    return 5/0
+
+try:
+    throw()
+except Exceptions:
+    print('Caught an exception')
+    
+except ZeroDivisionError:
+    print("division by zero!")
+
+finaly:
+    print('In finaly block for cleanup')

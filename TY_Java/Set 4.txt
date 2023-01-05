@@ -1,0 +1,69 @@
+/* Easy
+last } missing
+" missing in 1st print
+*/
+public class Main{
+    public static void main(String[] args) {
+        double n1 = -4.5, n2 = 3.9, n3 = 2.5;
+        if( n1 >= n2 && n1 >= n3)
+            System.out.println(n1 +  is the largest number.);
+        else if (n2 >= n1 && n2 >= n3)
+            System.out.println(n2 + " is the largest number.");
+        else
+            System.out.println(n3 + " is the largest number.");
+    }
+}
+
+
+/* Medium
+public static void main
+if(result == number)
+*/
+public class Main {
+    static void main(String[] args) {
+        int number = 1634, originalNumber, remainder, result = 0, n = 0;
+        originalNumber = number;
+        for (;originalNumber != 0; originalNumber /= 10, ++n);
+        originalNumber = number;
+        for (;originalNumber != 0; originalNumber /= 10)
+        {
+            remainder = originalNumber % 10;
+            result += Math.pow(remainder, n);
+        }
+        if(result = number)
+            System.out.println(number + " is an Armstrong number.");
+        else
+            System.out.println(number + " is not an Armstrong number.");
+    }
+}
+
+
+/*HARD
+abstract void brake();
+public void brake(){
+SportsBike();
+*/
+abstract class MotorBike {
+    void brake();
+}
+
+class SportsBike extends MotorBike{
+    public void brake(){
+        System.out.println("SportsBike Brake");
+    }
+}
+
+class MountainBike extends MotorBike {
+    public void brake{
+        System.out.println("MountainBike Brake");
+    }
+}
+
+class Main{
+    public static void main(string[] args) {
+        MountainBike m1 = new MountainBike();
+        SportsBike s1 = new SportsBike()
+        m1.brake();
+        s1.brake();
+    } 
+}

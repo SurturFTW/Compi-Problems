@@ -1,0 +1,72 @@
+LEVEL 1
+num1 = int(input("Enter first number: "))
+num2 = int(input(Enter second number: ))
+sum1 = num1+num2
+min1 = num1-num2
+mul = num1 * num2 
+div = num1/ num2 
+print( "Addition=",sum1);
+print( "Subtraction=",min1);
+print( "Multiplication=",mul);;
+print( "Division=",div);
+errors:
+-1)text inside input()
+2)Additional semicolon after print
+output:Enter first number: 12
+Enter second number: 2
+Addition= 14
+Subtraction= 10
+Multiplication= 24
+Division= 6.0
+
+LEVEL 2
+1)
+def pattern(n):
+   for i in range(-n):
+      for j in range(n):
+         print("* ",end="")
+      print("\r")
+n = int(input('Enter the number of rows: ))
+pattern(n)
+
+Error:1)range(-n) it should be range(n)
+2)Not completing quotes of string in input()
+output:-
+Enter the number of rows: 3
+* * * 
+* * * 
+* * * 
+
+LEVEL 3
+1.
+
+
+/*
+output:
+prime numbers
+enter a number:15
+2 3 5 7 11 13
+the number is:15 
+
+
+'''
+
+f=0; 
+b=0;j=2;i=2;
+print("prime numbers:\n");
+b=int(input(("enter a number:")));
+while i< b:
+    j=2;
+    f=0;              #f=2;
+    while j<i:
+        if(i%j==0):
+            f=1;
+            break;
+        j=j+1;
+      
+    if(f==0):
+        print(j,end=" ");#printf(j,end=" ");
+    i=i+1;
+        
+    
+print("\nthe number is: ",b);#print("\nthe number is: "+b);

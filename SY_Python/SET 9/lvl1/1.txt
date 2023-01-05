@@ -1,0 +1,11 @@
+LEVEL 1
+output:-
+The sum of numbers  is:  15
+
+code:
+numbers = [1,2,3,4,5]  
+sum1= 0    
+for num in numbers      
+sum1 = sum1 + num   
+print("The sum of numbers  is: ", sum1)  
+

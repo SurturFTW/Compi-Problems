@@ -1,0 +1,16 @@
+LEVEL 2
+
+Output:
+2 + 4 = 6
+ 
+ 
+
+#ord gives the ascii number value of the passed character where as
+#chr gives the ascii character value of the passed number
+def show_name():
+    num=V;
+    ch=ord(num)/2;
+    return ch;
+d=show_name;
+print('2 ',chr(d),' 4 = ',6);
+

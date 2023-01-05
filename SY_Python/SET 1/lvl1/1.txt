@@ -1,0 +1,21 @@
+LEVEL 1
+Output:
+Enter first number:4
+Enter second number:2
+Addition=6
+Subtraction=2
+Multiplication=8
+Division=2
+
+code:
+num1 = int(input("Enter first number: "))
+num2 = int(input(Enter second number: ))
+sum1 = num1+num2
+min1 = num1-num2
+mul = num1 * num2 
+div = num1/ num2 
+print( "Addition=",sum1);
+print( "Subtraction=",min1);
+print( "Multiplication=",mul);;
+print( "Division=",div);
+

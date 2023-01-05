@@ -1,0 +1,18 @@
+LEVEL 3
+
+output:-
+Dictionary Before Sorting [('pp', 92), ('ds', 97), ('apm', 88), ('dbms', 99)]
+Dictionary Before Sorting {'apm': 88, 'pp': 92, 'ds': 97, 'dbms': 99}
+
+code:
+dic={'pp':92,'ds':97,'apm':88,'dbms':99}
+new=list(dic.items())
+print("Dictionary Before Sorting",new)
+l=len(new)
+for i in range(l-1):
+    for j in range(i+1,l):
+        if (new[i][1]>new[j][1]):
+            temp=new[i]
+            new[i]=new[j]
+            new[j]=temp
+print("Dictionary Before Sorting",dict(new))

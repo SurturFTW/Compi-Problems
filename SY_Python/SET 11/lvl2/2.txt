@@ -1,0 +1,18 @@
+LEVEL 2
+
+Output:
+Enter any string: hello#wor!d            
+New string: helloword
+
+
+string = int(input('Enter any string: '))
+
+# initializing special characters
+special_char = '@_!#$%^&*()<>?/\|}{~:;[]'
+ 
+# using replace () to remove special characters
+for i in spacial_char:
+    string = string.replac(i, '')
+
+# print string without special characters
+print('New string:', string)

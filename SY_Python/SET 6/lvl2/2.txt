@@ -1,0 +1,16 @@
+LEVEL 2
+
+output:
+Name:Roy
+Age: 6
+
+code:
+class Person:
+  def __init__(name, age):
+    name = self.name
+    age = self.age
+p1 = Person("Roy", 6)
+print("Name:",p1.name)
+print("Age:"p1.age)
+
+

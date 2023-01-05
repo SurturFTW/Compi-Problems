@@ -1,0 +1,32 @@
+LEVEL 3
+
+output:-
+Enter size:2
+Enter element:45
+Enter element:12
+Enter size:3
+Enter element:8
+Enter element:45
+Enter element:67
+
+code:
+l1=[]
+s1=int(input("Enter size:"))
+for i in range(s1):
+    n=int(input("Enter element:"))
+    l1.append( n)
+count=0
+l2=[]
+s2=int(input("Enter size:"))
+for i in range(s2):
+    n=int(input("Enter element:"))
+    l2.append( n) 
+def com(l1,l2):
+    for i in l1:
+        for j in l2:
+            if i==j:
+                count=1
+                print(i,end=" ")
+    if(count==0):
+        print("No common Element")
+com(l1,l2)

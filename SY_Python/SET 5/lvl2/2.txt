@@ -1,0 +1,30 @@
+LEVEL 2
+output:
+Enter name:Aayush
+Enter age:34
+Enter RoLL No:11
+Name:=Aayush
+Age:= 34
+Roo no:= 11
+
+
+code:
+class person:
+    def getinfo(self,name,age):
+        self.name=name
+        self.age=age
+class student person:
+    def info(self,name,age,roll):
+        person.getinfo(self,name,age)
+        self.roll=roll
+    def printdetails(self):
+        print("Name:=",self.name)
+        print("Age:=",self.age)
+        print("Roo no:=",self.roll)
+s1=student()
+name=input("Enter name:")
+age=int(input("Enter age:"))
+roll=int(input("Enter RoLL No:"))
+s1.info(self,name,age,roll)
+s1.printdetails()
+

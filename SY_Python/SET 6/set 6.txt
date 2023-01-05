@@ -1,0 +1,49 @@
+LEVEL 1
+6)
+def info(a,b):
+    n1=a,n2=b
+    printf("Addition=",n1+n2)
+a=int(input("Enter a number:"))
+b=int(input("Enter a number:"))
+info(a,b)
+Error:1)comma between n1=a,n2=b
+2)printf
+output:Enter a number:4
+Enter a number:7
+Addition= 11
+
+LEVEL 2
+
+6)
+class Person:
+  def __init__(name, age):
+    name = self.name
+    age = self.age
+p1 = Person("Roy", 6)
+print("Name:",p1.name)
+print("Age:"p1.age)
+Error:1)use of self
+2)comma is missing in "Age:"p1.age
+output:
+Name:Roy
+Age: 6
+LEVEL 3
+6.
+'''
+Output:
+Caught an exception
+In finaly block for cleanup
+'''
+def throws():
+    return 5/0
+
+try:
+    throws()#throw()
+except Exception:#except Exceptions:
+    print('Caught an exception')
+    
+except ZeroDivisionError:
+    print("division by zero!")
+
+finally:#finaly:
+    print('In finaly block for cleanup')

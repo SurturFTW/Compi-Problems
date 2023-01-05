@@ -1,0 +1,16 @@
+LEVEL 1
+
+output:Please enter value for n1: 12
+Please enter value for n2: 45
+The Value of P after swapping:  45
+The Value of Q after swapping:  12
+
+code:
+n1 = int( input("Please enter value for n1: "))  
+n2 = int( input("Please enter value for n2: "))
+//temp variable is taken to temporary store values
+  temp = n1 
+n1 = n2
+n2 = temp   
+print ("The Value of P after swapping: ", n1)  
+print ("The Value of Q after swapping: ", n2)   

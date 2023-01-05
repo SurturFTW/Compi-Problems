@@ -1,0 +1,58 @@
+LEVEL 1
+4)
+num=int(input("Enter A number:"))
+if(num<0):
+print("Number is negative")
+else(num>0):
+ print("Number is positive")
+error:1)indentation in if block
+2)condition in else
+output:Enter A number:6
+Number is positive
+LEVEL 2
+4)
+class Person:
+  def init(self, name, age):
+    self.name = name
+    self.age = age
+p1 = Person("John", 36)
+print("Name:",p1,name)
+print("Age:",p1.age)
+Error:1)init it shoul be _init_ 
+2)p1,name and p1,age it should be p1.name and p1.age
+output:-
+Name: John
+Age: 36
+
+LEVEL 3
+4.
+'''
+Output:
+Matrix after multiplication:
+
+3 8 9 
+7 18 19 
+11 28 29 
+
+'''
+
+ m1 = [[1,2],[3,4],[5,6]]#3*2
+m2 = [[1,2,1],[1,3,4]]#2*3
+prd=[[],[],[]]
+
+i=0
+print("Matrix after multiplication:\n")
+while(i<3):
+    j=0
+    while(j<3):
+        k=0
+        sum=0#sum=1
+        while(k<2):
+            sum=sum+m1[i][k]*m2[k][j]
+            k=k+1 
+        
+        prd[i].insert(j,sum)#indentation inside
+        print(prd[i][j],end=" ")
+        j=j+1;
+    print()
+    i=i+1;

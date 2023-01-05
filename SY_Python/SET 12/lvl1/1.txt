@@ -1,0 +1,12 @@
+LEVEL 1
+output:
+Enter A Number3
+Cube Of  3 is 27.0
+
+code:
+import math
+n=int(input(Enter A Number:))
+cube=math.pow(n;3)
+print("Cube Of ",n,"is",cube)
+
+

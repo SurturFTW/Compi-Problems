@@ -1,0 +1,60 @@
+LEVEL 1
+10)
+numbers = [1,2,3,4,5]  
+sum1= 0    
+for num is numbers:      
+    sum1 = sum1 + num   
+  
+print("The sum of numbers  is: ", sum) 
+Error:-1)'is' should be replace by 'in'
+2)sum1 should be print
+output:The sum of numbers  is:  15
+
+LEVEL 2
+16.
+Output:
+Enter any string: hello#wor!d            
+New string: helloword
+'''
+string = input('Enter any string: ')#string = int(input('Enter any string: '))
+
+# initializing special characters
+special_char = '@_!#$%^&*()<>?/\|}{~:;[]'
+ 
+# using replace () to remove special characters
+for i in special_char:#for i in spacial_char:
+    string = string.replace(i, '')#string = string.replac(i, '')
+
+# print string without special characters
+print('New string:', string)
+
+LEVEL 3
+12)
+l1=[]
+s1=int(input("Enter size:)) #s1=int(input("Enter size:"))
+for i in range(s1):
+    n=int(input("Enter element:"))
+    l1.append( n)
+count=0
+l2=[]
+s2=int(input("Enter size:"))
+for i in range(s2):
+    n=int(input("Enter element:"))
+    l2.append( n) 
+def com(l1,l2):
+    for i is l1:#for i in l1:
+        for j in l2:
+            if i==j:
+                count=1
+                print(i,end=" ")
+    if(count=0):#if(count==0):
+        print("No common Element")
+com(l1,l2)
+output:-
+Enter size:2
+Enter element:45
+Enter element:12
+Enter size:3
+Enter element:8
+Enter element:45
+Enter element:67
