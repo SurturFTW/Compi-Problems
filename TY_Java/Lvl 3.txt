@@ -1,0 +1,15 @@
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println(Enter a number: );
+        int num = input.nextint();
+
+        if (num > 0) {
+            system.out.println(num + " is positive.");
+        } else if (num < 0) { 
+            system.out.println(num + " is negative."); 
+        } else {
+            System.out.println(num + " is zero.");
+        }
+    }
+}
